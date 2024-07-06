@@ -1,0 +1,553 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face { 
+  font-family: "ArialBoldItalic";
+  font-family: "ArialBold";
+  src: url("font/ArialBlack/ArialBlack.ttf") format('truetype');
+  src: url("font/ArialBold.ttf")format('truetype');
+  font-style: italic;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+} 
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.top{
+  background-color: #e84a50;
+}
+
+.header-top-item{
+  display: flex;
+  align-items: center;
+}
+
+header .top {
+  padding: 15px 0;
+}
+
+.header-top-item .header-icon {
+  margin-right: 5px;
+ }
+
+ header {
+  color: #fff
+  }
+
+  .bottom{
+    background-color: #e21d24;
+  }
+
+  .header-botom-item{
+    display: flex;
+    align-items: center;
+  }
+
+  .header-icon{
+    margin-right: 15px;
+  }
+  
+  .price{
+    font-size: 30px;
+    font-family: "ArialBold";
+  }
+
+  .catalog{
+    background-color: black;
+    position: fixed;
+    width: 40px;
+    height: 100%;
+    z-index: 10;
+    top: 0px;
+  }
+
+  .container-catalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px
+  }
+
+.container-catalog span{
+  transform: rotate(270deg);
+    color: white;
+    padding-right: 230px;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,16px));
+  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,16px));
+}
+
+.teaser {
+  background-color: #494949;
+}
+
+.text-size{
+  font-size: 16px;
+}
+
+.header-teaser-item{
+  display: flex;
+  align-items: center;
+}
+
+header .teaser{
+  padding: 15px 0;
+}
+
+.dropdown-catalog{
+  font-size: 14px;
+  background-color: #ececec;
+}
+
+.dropdown-catalog{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99999;
+  height: 100%;
+  top:0;
+  width: 250px;
+  text-decoration: none;
+}
+
+.dropdown-catalog span {
+  color: black;
+}
+
+.dropdown-item {
+  margin-left: 15px;
+}
+
+.dropdown-catalog a {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.dropdown-catalog a:hover {
+  background-color: #d5d5d5;
+}
+
+.dropdown-catalog img {
+  margin-right: 5px;
+}
+
+.dropdown-catalog-menu {
+  font-size: 20px;
+  color:#fff;
+  background-color: #686868;
+}
+
+.dropdown-catalog-menu span{
+  color:#fff;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-catalog-menu span img{
+  padding-left: 7px;
+}
+
+
+.menu {
+  display: none;
+  /* Допустим, что изначально меню скрыто */
+}
+
+.opened {
+  display: block !important;
+  /* Используйте !important, чтобы переопределить стили, если необходимо */
+}
+
+.flex-end{
+  justify-content: flex-end;
+}
+.catalog-header-item {
+  width: 53%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.text-size24 {
+  font-size: 24px;
+}
+.text-size30 {
+  font-size: 30px;
+}
+
+.text-size18{
+  font-size: 18px;
+}
+
+.color-red{
+  color: red;
+}
+
+.color-grey{
+  color: #dadada;
+  text-decoration: line-through;
+}
+
+.catalog-header-icon{
+  display: flex;
+  align-items: center;
+}
+
+.indent-left{
+  padding-left: 10px;
+}
+
+.indent-right{
+  padding-right: 10px;
+}
+
+.catalog-category-1{
+  display: flex;
+}
+
+.catalog-category-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.text-center{
+  text-align: center;
+}
+.top-product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+  background-color: #ffb500;
+  border: none;
+  color: white;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.cart-item{
+  display: flex;
+  align-items: center;
+}
+
+.text-size22{
+  font-size: 22px;
+}
+
+.text-size14{
+  font-size: 14px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+}
+
+.product-item {
+  position: relative;
+  text-align: center;
+  border: 1px solid #efe9e9;
+  
+}
+
+.price {
+  font-weight: bold;
+}
+
+.p-top15{
+ padding-top: 5px;
+}
+
+.vertical-icon{
+  position: absolute;
+    right: 1px;
+    display: flex;
+    flex-direction: column;
+    bottom: 272px;
+    height: 130px;
+}
+
+.vertical-icon-left-product{
+  position: absolute;
+    right: 1px;
+    display: flex;
+    flex-direction: column;
+    top: 3px;
+}
+
+.product-img{
+  height: 209px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+
+.horizontal-icon{
+  height: 48px;
+  display: flex;
+}
+
+.height43{
+  height: 43px;
+  width: 220px;
+}
+
+.horizontal-icon div{
+  display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.product-item-left{
+    text-align: center;
+    
+}
+
+.left-product{
+  position: relative;
+  border: 1px solid #efe9e9;
+}
+
+.sum{
+  position: absolute;
+  left: 88px;
+  bottom: 150px;
+}
+
+.basket-sum{
+  position: absolute;
+    right: 85px;
+    bottom: 187px;
+}
+
+.sum-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
+.sum-basket{
+  display:none;
+  
+}
+
+
+@media screen and (max-width: 1600px) {
+  .product-img{
+    width: 227px;
+    /* Изменение ширины карточки на 100% при уменьшении экрана */
+    /*height: auto;
+    /* Можете изменить на auto или другое значение в зависимости от дизайна */
+    /* Другие стили, если необходимо */
+  }
+
+  .height43{
+    /*height: 70px;*/
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1100px) {
+
+  /* Ваши стили для этого диапазона размеров экрана */
+  .left-product {
+    display: none;
+    /* Пример стиля */
+  }
+
+  .mobile-none{
+    display: none;
+  }
+  
+  .header .teaser {
+    padding: none;
+  }
+
+    .flex-between {
+     justify-content: center; 
+      flex-wrap: wrap;
+    }
+
+    .header-teaser-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 218px;
+      padding: 14px;
+      flex-direction: column;
+      background-color: #494949;
+    }
+
+    .teaser {
+    background-color: #ffff;
+    }
+
+        .catalog-header-item span:nth-child(2) {
+          /* Стили для второго span внутри .container */
+          display: none;
+        }
+
+    .mySwiper {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+  /* Стили, которые будут применяться при ширине экрана менее 1500px */
+  .product-5,
+  .product-10 {
+      display: none;
+    }
+
+  /* Другие стили */
+}
+
+@media screen and (max-width: 1287px) {
+
+  /* Стили, которые будут применяться при ширине экрана менее 1500px */
+  .product-4,
+  .product-9 {
+    /* Стили для пятого div внутри .container */
+    display: none;
+  }
+
+  /* Другие стили */
+}
+
+@media screen and (min-width: 1100px) {
+
+  /* Ваши стили здесь */
+  .mobileSwiper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1100px) {
+
+  /* Ваши стили здесь */
+  .catalog {
+      background-color: black;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      top: 0px;
+  }
+
+    .container-catalog {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 40px;
+      padding-top: unset;
+    }
+
+        .container-catalog span {
+          color: white;
+          transform: none;
+          /*padding-right: 293px;*/
+          white-space: nowrap;
+          font-size: 18px;
+        }
+
+        .header-top-item span{
+          display: none;
+        }
+
+        .header-triangle{
+          display: none;
+        }
+        
+        .flex-between {
+          justify-content: space-between;
+        }
+
+        .teaser .container.flex-between {
+          display: flex;
+          justify-content: center;
+          }
+
+        .flex-end {
+            justify-content: center;
+            padding: 10px;
+          }
+
+          .margin-left10{
+            margin-left: 10px;
+          }
+}
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+    .product-2,
+    .product-7 {
+      display: none;
+    }
+
+
+
+}

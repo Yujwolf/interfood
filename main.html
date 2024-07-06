@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  
+
+  <header>
+    <div class="top">
+      <div class="container flex-between">
+        <div class="header-top-item">
+          <img src="img/burger-icon.png" class="header-icon" />
+          <span>МЕНЮ</span>
+        </div>
+        <div class="header-top-item">
+          <img src="img/flag-icon.png" class="header-icon" />
+          <span>Русский</span>
+          <img src="img/triangle-icon.png" class="header-triangle" />
+        </div>
+        <div class="header-top-item">
+          <img src="img/store-icon.png" class="header-icon" />
+          <span>Магазины</span>
+          <img src="img/triangle-icon.png" class="header-triangle" />
+        </div>
+        <div class="header-top-item">
+          <img src="img/phone-icon.png" class="header-icon" />
+          <span>+7 (727) 275 86 05</span>
+          <img src="img/triangle-icon.png" class="header-triangle" />
+        </div>
+        <div class="header-top-item">
+          <img src="img/search-icon.png" class="header-icon" />
+          <img src="img/man-icon.png" class="header-icon" />
+
+          <span>Личный кабинет</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="container flex-between">
+        <div class="header-botom-item">
+          <img src="img/tdm-logo.png" class="header-icon" />
+        </div>
+        <div class="header-botom-item">
+          <img src="img/lockation-icon.png" class="header-icon" />
+          <span>Мой город: Алматы</span>
+          <img src="img/triangle-icon.png" class="header-icon" />
+        </div>
+        <div class="header-botom-item">
+          <img src="img/delivery-icon.png" class="header-icon" />
+          <span>Доставка</span>
+        </div>
+        <div class="header-botom-item">
+          <img src="img/pay-icon.png" class="header-icon" />
+          <span>Оплата</span>
+        </div>
+        <div class="header-botom-item">
+          <img src="img/basket-icon.png" class="header-icon" />
+          <div class="header-botom-item-text">
+            <p>
+              <span class="price">12</span>
+              <span>товаров</span>
+            </p>
+            <p>
+              <span class="price">12 000</span>
+              <span>тг</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+<div class="catalog">
+  <div class="container-catalog" id="burger">
+    <img src="img/square-icon.png" class="margin-left10" />
+    <span class="catalog-item2 margin-left10">КАТАЛОГ ТОВАРОВ</span>
+  </div>
+  <div class="dropdown-catalog menu" id="menu">
+    <!-- Здесь разместите пункты выпадающего меню -->
+
+    <a href="#" class="dropdown-catalog-menu">
+      <span>КАТАЛОГ ТОВАРОВ
+        <img src="img/dropdown-cross-icon.png" id="closeButton" />
+
+      </span>
+    </a>
+
+    <a href="#">
+      <img src="img/dropdown-menu-cup-icon.png" />
+      <span class="dropdown-item">Продукты питания</span>
+    </a>
+    <a href="#">
+      <img src="img/dropdown-fresh-product-icon.png" />
+      <span class="dropdown-item">Свежие продукты</span></a>
+    <a href="#">
+      <img src="img/dropdown-things-icon.png" />
+      <span class="dropdown-item">Принадлежности</span></a>
+    <a href="#">
+      <img src="img/dropdown-cosmetik-icon.png" />
+      <span class="dropdown-item">Косметика и бытовая химия</span></a>
+    <a href="#">
+      <img src="img/dropdown-home-products-icon.png" />
+      <span class="dropdown-item">Товары для дома</span></a>
+    <a href="#">
+      <img src="img/dropdown-froze-products-icon.png" />
+      <span class="dropdown-item">Замороженные товары</span></a>
+    <a href="#">
+      <img src="img/dropdown-canner-producnts-icon.png" />
+      <span class="dropdown-item">Консервированные продукты</span></a>
+    <a href="#">
+      <img src="img/dropdown-animal-icon.png" />
+      <span class="dropdown-item">Товары для животных</span></a>
+    <a href="#">
+      <img src="img/dropdown-house-product-icon.png" />
+      <span class="dropdown-item">Хозяйственные нужды</span></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Слайдер для мобильной версии -->
+    <div class="swiper mobileSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slide-mobile.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-mobile.jpg" />
+        </div>
+      
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="teaser">
+      <div class="container flex-between">
+        <div class="header-teaser-item text-size">
+          <img src="img/gift-icon.png" class="header-icon" />
+          <span>Заказать подарочный</br> набор</span>
+        </div>
+        <div class="header-teaser-item text-size">
+          <img src="img/recipes.png" class="header-icon" />
+          <span>Рецепты от</br> INTERFOOD</span>
+        </div>
+        <div class="header-teaser-item text-size">
+          <img src="img/newspaper-icon.png" class="header-icon" />
+          <span>Газета</br> INTERFOOD</span>
+        </div>
+        <div class="header-teaser-item text-size">
+          <img src="img/newspaper-icon.png" class="header-icon" />
+          <span>Программа</br> лояльности</span>
+        </div>
+        <div class="header-teaser-item text-size">
+          <img src="img/teaser-delivery-icon.png" class="header-icon" />
+          <span>Бесплатная</br> доставка по городу</span>
+        </div>
+        <div class="header-teaser-item text-size">
+          <img src="img/teaser-pay-icon.png" class="header-icon" />
+          <span>Удобная</br> оплата</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+
+    <div>
+      <div class="container flex-end">
+        <div class="catalog-header-item text-size">
+          <span class="catalog-header-icon text-size24">
+            <img src="img/catalog-category-like-icon.png" class="indent-right">
+            Лучшее в сезоне
+          </span>
+          <span class="catalog-header-icon  text-size">В раздел
+            <img src="img/catalog-category-arrow-icon.png" class="indent-left">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-category-1">
+      <div class="container">
+
+        <div class="catalog-category-item left-product">
+          <div class="product-item-left">
+            <img src="img/catalog-product-top.png">
+            <div class="vertical-icon-left-product">
+              <img src="img/catalog-product-new-icon.png" class="p-top15">
+              <img src="img/catalog-product-like-icon.png" class="p-top15">
+              <img src="img/catalog-product-sale-icon.png" class="p-top15">
+            </div>
+            <p class="text-size24 text-center">Жайма Кэмми для бешбармака</br> 200 г.</p>
+            <p class="text-size">Лапша и макароны "КЭММИ" — это великолепный продукт, изготовленный по особой
+              технологии.
+              Для его производства используется мука высочайшего класса. КЭММИ — просто, быстро и вкусно!</p>
+            <div class="top-product-price">
+              <span>159
+                <img src="img/catalog-product-tenge-icon.png">
+                <span class="text-size30 color-red">119</span>
+                <span>/</span>
+                <span class="text-size30">кг</span>
+              </span>
+              <span class="cart-item"><img src="img/catalog-product-level-icon.png" class="indent-right">
+                Большое<br> количество</span>
+            </div>
+            <div class="top-product-price">
+              <span> <img src="img/catalog-product-star-icon.png">В избранном</span>
+              <button class="pay">
+                <img src="img/catalog-product-basket-icon.png">
+                Купить
+              </button>
+              <span><img src="img/catalog-product-comparison-icon.png">В сравнении</span>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-category-item">
+          <div class="product-row">
+            <div class="product-item">
+              <div class="product-img">
+                <img src="img/catalog-product-1.png" alt="Product 1">
+              </div>
+              <div class="horizontal-icon">
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-new-icon.png" class="p-top15">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+                <img src="img/catalog-product-sale-icon.png" class="p-top15">
+              </div>
+              <div class="product-text">
+                  <p class="text-size18 height43">Молочный коктейль в ассортименте Растишка</p>
+                  <div>
+                      <span class="text-size color-grey">2700
+                        <img src="img/catalog-product-tenge-min-icon.png">
+                      </span>
+                      <span class="text-size22 color-red">199</span>
+                      <span>/</span>
+                      <span class="text-size22">шт</span>
+                  </div>
+                  
+              </div>
+              
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="product-item product-2">
+              <div class="product-img">
+                <img src="img/catalog-product-2.jpg" alt="Product 1">
+              </div>
+              <div class="horizontal-icon">
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div class="product-text">
+                  <p class="text-size18 height43">Чистящее средство для унитаза Bref сила-актив</p>
+                  <div>
+                    <span class="text-size color-grey">
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">379</span>
+                    <span>/</span>
+                    <span class="text-size22">шт</span>
+                  </div>
+                  
+              </div>
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="product-item mobile-none">
+              <div class="product-img height255">
+                <img src="img/catalog-product-3.jpg">
+              </div>
+              <div class="horizontal-icon">
+                <div>
+                  <img src="img/catalog-product-comparison-round-icon.png">
+                  <img src="img/catalog-product-red-basket-icon.png" class="sum">
+                  <span class="basket-sum color-red">12</span>
+                </div>
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div class="product-text">
+                  <p class="text-size18 height43">0,91л Конц д/белья lenor</p>
+                  <div>
+                    <span class="text-size color-grey">1 189
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">989</span>
+                    <span>/</span>
+                    <span class="text-size22">шт</span>
+                  </div>
+                  
+              </div>
+              
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="product-item mobile-none product-4">
+              <div class="product-img height255">
+                <img src="img/catalog-product-4.jpg">
+              </div>
+              <div class="horizontal-icon">
+                <div>
+                  <img src="img/catalog-product-comparison-round-icon.png">
+                </div>
+                <div>
+                  <img src="img/catalog-product-star-round-icon.png">
+                </div>
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div>
+                  <p class="text-size18 height43">Табл. для посудомоечных машин Somat Gold 18 шт </p>
+                  <div>
+                    <span class="text-size color-grey">3 250
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">2 109</span>
+                    <span>/</span>
+                    <span class="text-size22">уп</span>
+                  </div>
+              </div>
+              
+              
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+
+            </div>
+            <div class="product-item mobile-none product-5">
+              <div class="product-img height255">
+                <img src="img/catalog-product-5.jpg">
+              </div>
+              <div class="horizontal-icon">
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div>
+                  <p class="text-size18 height43">Гель для стирки Ласка Care & Repair</p>
+                  <div>
+                    <span class="text-size color-grey">
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">32 156</span>
+                    <span>/</span>
+                    <span class="text-size22">шт</span>
+                  </div>
+              </div>
+              
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="product-row">
+            <div class="product-item">
+              <div class="product-img height255">
+                <img src="img/catalog-product-6.jpg">
+              </div>
+              <div class="horizontal-icon">
+                <div>
+                  <img src="img/catalog-product-comparison-round-icon.png">
+                </div>
+                <div id="sum-basket" class="sum-basket">
+                  <img src="img/catalog-product-red-basket-icon.png" class="sum">
+                  <span class="basket-sum color-red">12</span>
+                </div>
+                <div>
+                  <img src="img/catalog-product-star-round-icon.png">
+                </div>
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div>
+                  <p class="text-size18 height43">Арахис жареный соленый Биолайн 1 кг</p>
+                  <div>
+                    <span class="text-size color-grey">1 189
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">989</span>
+                    <span>/</span>
+                    <span class="text-size22">кг</span>
+                  </div>
+              </div>
+              
+              <div>
+                <button class="Купить" onclick="showSum()">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+              <div id="sum-button" class="sum-button">
+
+                <img src="img/catalog-product-minus-icon.png" class="text-size14">
+
+                <span>12 шт</span>
+
+                <img src="img/catalog-product-plus-icon.png" class="text-size14">
+                <img src="img/catalog-product-close-icon.png" class="text-size14 close-sum" onclick="closeSum()">
+
+              </div>
+            </div>
+            <div class="product-item product-7">
+              <div class="product-img height255">
+                <img src="img/catalog-product-7.jpg">
+              </div>
+              <div class="horizontal-icon">
+                <div>
+                  <img src="img/catalog-product-comparison-round-icon.png">
+                </div>
+                <div>
+                  <img src="img/catalog-product-star-round-icon.png">
+                </div>
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div>
+                  <p class="text-size18 height43">Масло оливковое pomace Aro 1 л</p>
+                  <div>
+                    <span class="text-size color-grey">1 189
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">989</span>
+                    <span>/</span>
+                    <span class="text-size22">шт</span>
+                  </div>
+              </div>
+              
+              
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="product-item mobile-none">
+              <div class="product-img height255">
+                <img src="img/catalog-product-8.jpg">
+              </div>
+              <div class="horizontal-icon">
+                <div>
+                  <img src="img/catalog-product-star-round-icon.png">
+                </div>
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div>
+                  <p class="text-size18 height43">Кукольный домик с мебелью</p>
+                  <div>
+                    <span class="text-size color-grey">
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">45 486</span>
+                    <span>/</span>
+                    <span class="text-size22">шт</span>
+                  </div>
+              </div>
+              
+              
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="product-item mobile-none product-9">
+              <div class="product-img height255">
+                <img src="img/catalog-product-9.jpg">
+              </div>
+              <div class="horizontal-icon">
+                <div>
+
+                </div>
+                <div>
+                  <img src="img/catalog-product-star-round-icon.png">
+                </div>
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div>
+                  <p class="text-size18 height43">Игрушка для ванны утка</p>
+                  <div>
+                    <span class="text-size color-grey">999
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">769</span>
+                    <span>/</span>
+                    <span class="text-size22">шт</span>
+                  </div>
+              </div>
+              
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="product-item mobile-none product-10">
+              <div class="product-img height255">
+                <img src="img/catalog-product-10.jpg">
+              </div>
+              <div class="horizontal-icon">
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+              </div>
+              <div class="vertical-icon">
+                <img src="img/catalog-product-like-icon.png" class="p-top15">
+              </div>
+              <div>
+                  <p class="text-size18 height43">Ручка шариковая 12шт К-9 0,4 мм</p>
+                  <div>
+                    <span class="text-size color-grey">
+                      <img src="img/catalog-product-tenge-min-icon.png">
+                    </span>
+                    <span class="text-size22 color-red">1 799</span>
+                    <span>/</span>
+                    <span class="text-size22">шт</span>
+                  </div>
+              </div>
+              
+             
+              <div>
+                <button class="Купить">
+                  <img src="img/catalog-product-basket-min-icon.png" class="text-size14">
+                  КУПИТЬ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </section>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  
+    var swiper = new Swiper(".mobileSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+  
+
+  
+    
+  
+
+
+    
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
